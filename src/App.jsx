@@ -6,7 +6,7 @@ import { io } from 'socket.io-client'
 
 function App() {
     const socket = useMemo(()=>{
-      return  io('http://localhost:3000')
+      return  io('https://server-9sc0.onrender.com')
     },[])
     const [text,setText] = useState([])
     const [userText,setUserText] = useState()
