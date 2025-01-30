@@ -3,7 +3,7 @@ import { io } from "socket.io-client";
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 function App() {
-  const socket = useMemo(() => io("http://localhost:3000"), []);
+  const socket = useMemo(() => io("https://server-9sc0.onrender.com"), []);
   const [messages, setMessages] = useState([]);
   const [inputText, setInputText] = useState("");
   const [currentUser, setCurrentUser] = useState("");
